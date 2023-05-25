@@ -1,45 +1,24 @@
 import React, { useState } from 'react'
 
 const AddRecipeForm = () => {
-    const [showImage, setShowImage] = useState();
-    const fileInput = document.getElementById('imageupload');
+    
     const setimage = (e) => {
-
-         if (fileInput.files && fileInput.files[0]) {
-             var fr = new FileReader();
-             fr.onload = function () {
-                
-                 document.getElementById("blah").src = fr.result;
-             }
-             fr.readAsDataURL(fileInput.files[0]);
-            //  var reader = new FileReader();
-
-            // reader.onload = function (e) {
-            //      document.getElementById('#blah')
-            //          .attr('src', e.target.result)
-            //          .width(150)
-            //          .height(200);
-            //  };
+        const fileInput = document.getElementById('imageupload');
+        if (fileInput.files && fileInput.files[0]) {
+            var fr = new FileReader();
+            fr.onload = function () {
             
-            //  reader.readAsDataURL(fileInput.files[0]);
-         }
+                document.getElementById("blah").src = fr.result;
+                document.getElementById("blah").classList.remove("d-none")
+            }
+            fr.readAsDataURL(fileInput.files[0]);
+        }
     }
-    function readURL(input) {
-        console.log(input)
-        // if (input.files && input.files[0]) {
-        //     var reader = new FileReader();
 
-            // reader.onload = function (e) {
-            //     ('#blah').attr('src', e.target.result).width(150).height(200);
-            // };
-
-            // reader.readAsDataURL(input.files[0]);
-        //}
-    }
 
   return (
     <div className='container mt-2'>
-        <img id='blah' src={showImage}/>
+        <img id='blah' className='d-none' src=""/>
         <form className='addrecipeform'>
             
             <div className='option'>

@@ -13,10 +13,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/" >Hem</NavLink>
+                            <NavLink className="nav-link" to="/ReactCookingApp" >Hem</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/addrecipe" >AddRecipe</NavLink>
+                            <NavLink className="nav-link" to="/ReactCookingApp/addrecipe" >AddRecipe</NavLink>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link">Disabled</a>
