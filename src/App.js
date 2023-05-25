@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Context.Provider value={recipies}>
         <Routes>
-          <Route path='/ReactCookingApp' element={<Home />} />
-          <Route path='/ReactCookingApp/addrecipe' element={<AddRecipe />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/addrecipe' element={<AddRecipe />} />
         </Routes>
       </Context.Provider>
     </BrowserRouter>
