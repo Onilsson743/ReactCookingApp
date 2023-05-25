@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ReactCookingApp/static/css/main.71d3cba4.css",
-    "main.js": "/ReactCookingApp/static/js/main.5d128dc2.js",
+    "main.js": "/ReactCookingApp/static/js/main.e0daa26d.js",
     "index.html": "/ReactCookingApp/index.html",
     "main.71d3cba4.css.map": "/ReactCookingApp/static/css/main.71d3cba4.css.map",
-    "main.5d128dc2.js.map": "/ReactCookingApp/static/js/main.5d128dc2.js.map"
+    "main.e0daa26d.js.map": "/ReactCookingApp/static/js/main.e0daa26d.js.map"
   },
   "entrypoints": [
     "static/css/main.71d3cba4.css",
-    "static/js/main.5d128dc2.js"
+    "static/js/main.e0daa26d.js"
   ]
 }
