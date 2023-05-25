@@ -1,29 +1,23 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Card from './components/smallcomponents/Card';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Context from './context/context';
+import { useState } from 'react';
+import Home from './components/pages/Home';
+import AddRecipe from './components/pages/AddRecipe';
 
 function App() {
-  var product1 = {
-    imageUrl: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
-    name: "Laxallad",
-    description: "Laxsallad med kokta ägg och en fräsch citronsås"
-  }
-  var product2 = {
-    imageUrl: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=780&q=80",
-    name: "Sallad",
-    description: "En erhört god hög med pankakor"
-  }
+  const [recipies,setRecipies] = useState({
+    all: []
+  })
   return (
-    <div className="App">
-      <Navbar />
-      <div className='container recipies-display'>
-        <Card key="1" item={product1}/>
-        <Card key="2" item={product2}/>
-        <Card key="3" item={product2}/>
-        <Card key="4" item={product1}/>
-      </div>
-      
-    </div>
+    <BrowserRouter>
+      <Context.Provider value={recipies}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/addrecipe' element={<AddRecipe />} />
+        </Routes>
+      </Context.Provider>
+    </BrowserRouter>
   );
 }
 
