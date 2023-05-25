@@ -16,7 +16,7 @@ const Navbar = () => {
                             <NavLink className="nav-link" to="/" >Hem</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/addrecipe" >AddRecipe</NavLink>
+                            <NavLink className="nav-link" to="/ReactCookingApp/addrecipe" >AddRecipe</NavLink>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link">Disabled</a>
