@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Context from './context/context';
 import { useState } from 'react';

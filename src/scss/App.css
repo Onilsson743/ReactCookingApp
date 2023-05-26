@@ -1,0 +1,155 @@
+.recipies-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addrecipepage {
+  background: center/cover no-repeat url("https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1099&q=80");
+  min-height: 100vh;
+}
+
+.addrecipeform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.addrecipeform .option {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.934);
+  padding: 10px 10px 60px 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(80, 80, 80, 0.701);
+}
+.addrecipeform .option .addeditems {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+.addrecipeform .option .addeditems .messurment {
+  width: 30%;
+}
+.addrecipeform .option .remove-button {
+  position: absolute;
+  right: 5px;
+  background-color: rgb(173, 172, 172);
+  bottom: 5px;
+  height: 23px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 16px;
+}
+.addrecipeform .option .descriptions {
+  margin: 0;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.addrecipeform .option .descriptions li {
+  font-size: 20px;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+.addrecipeform .option .descriptions li input {
+  font-size: 16px;
+}
+.addrecipeform .option .descriptions li button {
+  position: absolute;
+  right: 5px;
+  background-color: rgb(173, 172, 172);
+  bottom: 5px;
+  height: 23px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 16px;
+}
+.addrecipeform .option button {
+  width: 15%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: rgb(155, 235, 151);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.addrecipeform .option input {
+  border: 1px solid black;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  color: black;
+  border-radius: 8px;
+  padding: 5px 35px 5px 10px;
+}
+.addrecipeform .option input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+#addrecipe {
+  position: absolute;
+  z-index: -5;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#previewimage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+}
+
+.card {
+  width: 48%;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card .description {
+  color: white;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.card .description:hover {
+  opacity: 1;
+}
+.card .description:hover button {
+  bottom: 10px;
+}
+.card .description button {
+  position: absolute;
+  right: 10px;
+  bottom: -40px;
+  transition: 0.3s ease;
+}
+
+.navbar-nav {
+  text-align: right;
+}/*# sourceMappingURL=App.css.map */
